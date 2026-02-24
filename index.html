@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robotessy Daily Board</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="topbar">
+        <h1>Robotessy 最新动态看板</h1>
+        <div id="meta" class="meta">加载中...</div>
+      </header>
+
+      <section class="summary">
+        <div class="stat">
+          <span>中国近14天动态</span>
+          <strong id="chinaCount">0</strong>
+        </div>
+        <div class="stat">
+          <span>海外近14天动态</span>
+          <strong id="overseasCount">0</strong>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article>
+          <h2>中国</h2>
+          <div id="chinaBoard" class="board"></div>
+        </article>
+        <article>
+          <h2>海外</h2>
+          <div id="overseasBoard" class="board"></div>
+        </article>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
